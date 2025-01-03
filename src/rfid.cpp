@@ -3,10 +3,10 @@
 #include "logic.h"
 #include <SPI.h>
 
-#define OFFSET 2
+#define OFFSET 4
 
-MFRC522 mfrc522_1(10, 9);
-MFRC522 mfrc522_2(8, 9);
+MFRC522 mfrc522_1(8, 9);
+MFRC522 mfrc522_2(10, 9);
 
 
 byte tags [2][2][4] = {

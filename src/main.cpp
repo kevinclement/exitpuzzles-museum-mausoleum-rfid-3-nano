@@ -28,7 +28,7 @@ void setup() {
   Serial.begin(9600);
   Serial.setTimeout(10);
   Serial.println("READY");
-  Serial.println("RFID Reader for rfid 3 and 4 (NANO) by kevinc...\n");
+  Serial.println("RFID Reader for rfid 4 and 5 (NANO) by kevinc...\n");
 
   logic.setup();
   logic.status();

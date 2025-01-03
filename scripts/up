@@ -1,2 +1,2 @@
 #!/bin/sh
-pio run --target upload --upload-port /dev/ttyUSB0
+pio run --target upload --upload-port /dev/ttyRFID3
