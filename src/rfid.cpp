@@ -12,11 +12,11 @@ MFRC522 mfrc522_2(10, 9);
 byte tags [2][2][4] = {
   {
     { 0x04, 0xE9, 0x21, 0x0A },
-    { 0x87, 0x93, 0x8E, 0xF2 }
+    { 0xF7, 0x92, 0x8E, 0x81 }
   },
   {
     { 0x27, 0x8F, 0x8E, 0xF2 },
-    { 0xF7, 0x92, 0x8E, 0xF2 }
+    { 0x04, 0x06, 0x22, 0x0A}
   }
 };
 
@@ -98,6 +98,8 @@ RFID_STATE Rfid::checkForTag(uint8_t index, MFRC522 *mfr) {
   // rising edge
   if (tag_present[index] && !tag_present_prev[index]){
     Serial.println("Tag found, checking...");
+
+    
     st = compareTags(index) ? CORRECT : INCORRECT;
   }
 
